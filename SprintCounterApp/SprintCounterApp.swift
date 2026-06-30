@@ -1,11 +1,19 @@
 import SwiftUI
+import SprintEngineCore
+import WidgetKit
 
 @main
 struct SprintCounterApp: App {
+    init() {
+        if ConfigStore.load() == nil {
+            ConfigStore.save(.default)
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
-            Text("SprintCounter")
-                .frame(width: 400, height: 300)
+            ConfigWindow()
         }
+        .defaultSize(width: 720, height: 480)
     }
 }

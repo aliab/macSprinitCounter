@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0A6684B8C873709C6AD715 /* SprintPreviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F1B9F416C40A1CD9C0129B /* SprintPreviewCard.swift */; };
 		3AEE9168795B4F99DEF82022 /* SprintEngineCore in Frameworks */ = {isa = PBXBuildFile; productRef = D947AA80D3994D42DED293B6 /* SprintEngineCore */; };
 		6A79F01FDBC86B589389BB43 /* SprintWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D9101E787AF9353D48F36 /* SprintWidgetViews.swift */; };
 		6DC8B71CAE886E94E9BA3241 /* SprintWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4693D38168FEA839985A3A /* SprintWidget.swift */; };
 		88CB549541BE0EB6D816029A /* SprintCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270EB647364C416E50F59C12 /* SprintCounterApp.swift */; };
 		BFF3CB341A198826E14A8C20 /* SprintWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C7F3F5C66B8B62A040F6412B /* ConfigWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A602015923E03A9D5FED75 /* ConfigWindow.swift */; };
 		DE59D1F4F984937768FDB873 /* SprintTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BCEE87A3A12E3C173E26AB /* SprintTheme.swift */; };
 		DECD848512C02981B91D85D3 /* SprintEngineCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D5BD0AF6E1764C7793286B6 /* SprintEngineCore */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		26F1B9F416C40A1CD9C0129B /* SprintPreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintPreviewCard.swift; sourceTree = "<group>"; };
 		270EB647364C416E50F59C12 /* SprintCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintCounterApp.swift; sourceTree = "<group>"; };
 		36CD007EB63E25A9DBFE1BE8 /* SprintWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SprintWidget.entitlements; sourceTree = "<group>"; };
 		4D4693D38168FEA839985A3A /* SprintWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintWidget.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		B3FC6EE4A6D2D574D76A9A07 /* SprintCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SprintCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC01A63A76FABB5E97C0F6E /* SprintCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SprintCounter.entitlements; sourceTree = "<group>"; };
 		CF2D9101E787AF9353D48F36 /* SprintWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintWidgetViews.swift; sourceTree = "<group>"; };
+		D4A602015923E03A9D5FED75 /* ConfigWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigWindow.swift; sourceTree = "<group>"; };
 		F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SprintWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,9 +120,11 @@
 		A99DCBB834D9976CD816370A /* SprintCounterApp */ = {
 			isa = PBXGroup;
 			children = (
+				D4A602015923E03A9D5FED75 /* ConfigWindow.swift */,
 				7D0E96E24100970724C6C4C7 /* Info.plist */,
 				CEC01A63A76FABB5E97C0F6E /* SprintCounter.entitlements */,
 				270EB647364C416E50F59C12 /* SprintCounterApp.swift */,
+				26F1B9F416C40A1CD9C0129B /* SprintPreviewCard.swift */,
 			);
 			path = SprintCounterApp;
 			sourceTree = "<group>";
@@ -205,7 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F3F5C66B8B62A040F6412B /* ConfigWindow.swift in Sources */,
 				88CB549541BE0EB6D816029A /* SprintCounterApp.swift in Sources */,
+				0A0A6684B8C873709C6AD715 /* SprintPreviewCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
