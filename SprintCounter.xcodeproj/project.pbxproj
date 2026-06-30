@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AEE9168795B4F99DEF82022 /* SprintEngineCore in Frameworks */ = {isa = PBXBuildFile; productRef = D947AA80D3994D42DED293B6 /* SprintEngineCore */; };
+		6DC8B71CAE886E94E9BA3241 /* SprintWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4693D38168FEA839985A3A /* SprintWidget.swift */; };
+		88CB549541BE0EB6D816029A /* SprintCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270EB647364C416E50F59C12 /* SprintCounterApp.swift */; };
+		BFF3CB341A198826E14A8C20 /* SprintWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DECD848512C02981B91D85D3 /* SprintEngineCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D5BD0AF6E1764C7793286B6 /* SprintEngineCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7C6B0FBF0097B05F4FEAC35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DFEA4D4F86DC257DD26F346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75455C357DA0F8A49EDE6362;
+			remoteInfo = SprintWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74E3851B4351F91456D3E9B2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BFF3CB341A198826E14A8C20 /* SprintWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		270EB647364C416E50F59C12 /* SprintCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintCounterApp.swift; sourceTree = "<group>"; };
+		36CD007EB63E25A9DBFE1BE8 /* SprintWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SprintWidget.entitlements; sourceTree = "<group>"; };
+		4D4693D38168FEA839985A3A /* SprintWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintWidget.swift; sourceTree = "<group>"; };
+		7D0E96E24100970724C6C4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8F8DB95E35B162D01041F4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		908E0A67F89C184E27C67B96 /* SprintEngineCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SprintEngineCore; path = SprintEngineCore; sourceTree = SOURCE_ROOT; };
+		B3FC6EE4A6D2D574D76A9A07 /* SprintCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SprintCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC01A63A76FABB5E97C0F6E /* SprintCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SprintCounter.entitlements; sourceTree = "<group>"; };
+		F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SprintWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AAC4A1808D3774308F489AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECD848512C02981B91D85D3 /* SprintEngineCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8104F9920D322C5AFCF5397A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEE9168795B4F99DEF82022 /* SprintEngineCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1397C3F3190C4367AD1121C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3FC6EE4A6D2D574D76A9A07 /* SprintCounter.app */,
+				F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C8355E3A6DBE408C208333B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				908E0A67F89C184E27C67B96 /* SprintEngineCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		505A6AE4B8AF7AE3B932F316 /* SprintWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8F8DB95E35B162D01041F4D0 /* Info.plist */,
+				36CD007EB63E25A9DBFE1BE8 /* SprintWidget.entitlements */,
+				4D4693D38168FEA839985A3A /* SprintWidget.swift */,
+			);
+			path = SprintWidget;
+			sourceTree = "<group>";
+		};
+		7BAF91700F6B76CFEDFC1233 = {
+			isa = PBXGroup;
+			children = (
+				2C8355E3A6DBE408C208333B /* Packages */,
+				A99DCBB834D9976CD816370A /* SprintCounterApp */,
+				505A6AE4B8AF7AE3B932F316 /* SprintWidget */,
+				1397C3F3190C4367AD1121C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A99DCBB834D9976CD816370A /* SprintCounterApp */ = {
+			isa = PBXGroup;
+			children = (
+				7D0E96E24100970724C6C4C7 /* Info.plist */,
+				CEC01A63A76FABB5E97C0F6E /* SprintCounter.entitlements */,
+				270EB647364C416E50F59C12 /* SprintCounterApp.swift */,
+			);
+			path = SprintCounterApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23796C3DFEDBF82E5E3A2343 /* SprintCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA55A05FBF3C51431B4336E /* Build configuration list for PBXNativeTarget "SprintCounter" */;
+			buildPhases = (
+				1086C91CE22B374B34F17E0B /* Sources */,
+				8104F9920D322C5AFCF5397A /* Frameworks */,
+				74E3851B4351F91456D3E9B2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A863119D31C382F347E4E5 /* PBXTargetDependency */,
+			);
+			name = SprintCounter;
+			packageProductDependencies = (
+				D947AA80D3994D42DED293B6 /* SprintEngineCore */,
+			);
+			productName = SprintCounter;
+			productReference = B3FC6EE4A6D2D574D76A9A07 /* SprintCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75455C357DA0F8A49EDE6362 /* SprintWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5DC4BEBB913A9B846C8A01 /* Build configuration list for PBXNativeTarget "SprintWidget" */;
+			buildPhases = (
+				172F575C42652EF97BA24574 /* Sources */,
+				2AAC4A1808D3774308F489AD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SprintWidget;
+			packageProductDependencies = (
+				7D5BD0AF6E1764C7793286B6 /* SprintEngineCore */,
+			);
+			productName = SprintWidget;
+			productReference = F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DFEA4D4F86DC257DD26F346 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = A7727FFF7F4AE8D198F5661A /* Build configuration list for PBXProject "SprintCounter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7BAF91700F6B76CFEDFC1233;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3BBB7399AFED3053833B7833 /* XCLocalSwiftPackageReference "SprintEngineCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1397C3F3190C4367AD1121C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23796C3DFEDBF82E5E3A2343 /* SprintCounter */,
+				75455C357DA0F8A49EDE6362 /* SprintWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1086C91CE22B374B34F17E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CB549541BE0EB6D816029A /* SprintCounterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172F575C42652EF97BA24574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC8B71CAE886E94E9BA3241 /* SprintWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77A863119D31C382F347E4E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75455C357DA0F8A49EDE6362 /* SprintWidget */;
+			targetProxy = A7C6B0FBF0097B05F4FEAC35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B47C85DE88E68B68E94B76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SprintCounterApp/SprintCounter.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SprintCounterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintCounter;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6E99AD0F503CF7BEB084CF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SprintCounterApp/SprintCounter.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SprintCounterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintCounter;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		73B7ABBA7DBDFBCD4D047373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BDA3C514D3C54F4BD94B9215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D74B34D0856C6621D98F429F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SprintWidget/SprintWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SprintWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintWidget;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4EEDB00424A74C5763CC3A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SprintWidget/SprintWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SprintWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintWidget;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DA55A05FBF3C51431B4336E /* Build configuration list for PBXNativeTarget "SprintCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B47C85DE88E68B68E94B76B /* Debug */,
+				6E99AD0F503CF7BEB084CF51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A7727FFF7F4AE8D198F5661A /* Build configuration list for PBXProject "SprintCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73B7ABBA7DBDFBCD4D047373 /* Debug */,
+				BDA3C514D3C54F4BD94B9215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD5DC4BEBB913A9B846C8A01 /* Build configuration list for PBXNativeTarget "SprintWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4EEDB00424A74C5763CC3A1 /* Debug */,
+				D74B34D0856C6621D98F429F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3BBB7399AFED3053833B7833 /* XCLocalSwiftPackageReference "SprintEngineCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = SprintEngineCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D5BD0AF6E1764C7793286B6 /* SprintEngineCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SprintEngineCore;
+		};
+		D947AA80D3994D42DED293B6 /* SprintEngineCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SprintEngineCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0DFEA4D4F86DC257DD26F346 /* Project object */;
+}

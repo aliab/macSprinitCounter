@@ -1,0 +1,31 @@
+name: SprintCounter
+options:
+  bundleIdPrefix: com.aliabdolahi.sprintcounter
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+packages:
+  SprintEngineCore:
+    path: SprintEngineCore
+targets:
+  SprintCounter:
+    type: application
+    platform: macOS
+    sources:
+      - path: SprintCounterApp
+    settings:
+      INFOPLIST_FILE: SprintCounterApp/Info.plist
+      CODE_SIGN_ENTITLEMENTS: SprintCounterApp/SprintCounter.entitlements
+    dependencies:
+      - target: SprintWidget
+      - package: SprintEngineCore
+  SprintWidget:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: SprintWidget
+    settings:
+      INFOPLIST_FILE: SprintWidget/Info.plist
+      CODE_SIGN_ENTITLEMENTS: SprintWidget/SprintWidget.entitlements
+    dependencies:
+      - package: SprintEngineCore
