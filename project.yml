@@ -16,6 +16,7 @@ targets:
     settings:
       INFOPLIST_FILE: SprintCounterApp/Info.plist
       CODE_SIGN_ENTITLEMENTS: SprintCounterApp/SprintCounter.entitlements
+      PRODUCT_BUNDLE_IDENTIFIER: com.aliabdolahi.sprintcounter
     dependencies:
       - target: SprintWidget
       - package: SprintEngineCore
@@ -27,5 +28,6 @@ targets:
     settings:
       INFOPLIST_FILE: SprintWidget/Info.plist
       CODE_SIGN_ENTITLEMENTS: SprintWidget/SprintWidget.entitlements
+      PRODUCT_BUNDLE_IDENTIFIER: com.aliabdolahi.sprintcounter.widget
     dependencies:
       - package: SprintEngineCore

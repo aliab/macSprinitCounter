@@ -5,7 +5,7 @@
     <key>CFBundleName</key>
     <string>SprintCounter</string>
     <key>CFBundleIdentifier</key>
-    <string>com.aliabdolahi.sprintcounter</string>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>CFBundleShortVersionString</key>

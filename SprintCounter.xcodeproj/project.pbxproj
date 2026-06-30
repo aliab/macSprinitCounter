@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3AEE9168795B4F99DEF82022 /* SprintEngineCore in Frameworks */ = {isa = PBXBuildFile; productRef = D947AA80D3994D42DED293B6 /* SprintEngineCore */; };
+		6A79F01FDBC86B589389BB43 /* SprintWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D9101E787AF9353D48F36 /* SprintWidgetViews.swift */; };
 		6DC8B71CAE886E94E9BA3241 /* SprintWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4693D38168FEA839985A3A /* SprintWidget.swift */; };
 		88CB549541BE0EB6D816029A /* SprintCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270EB647364C416E50F59C12 /* SprintCounterApp.swift */; };
 		BFF3CB341A198826E14A8C20 /* SprintWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -49,6 +50,7 @@
 		908E0A67F89C184E27C67B96 /* SprintEngineCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SprintEngineCore; path = SprintEngineCore; sourceTree = SOURCE_ROOT; };
 		B3FC6EE4A6D2D574D76A9A07 /* SprintCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SprintCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC01A63A76FABB5E97C0F6E /* SprintCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SprintCounter.entitlements; sourceTree = "<group>"; };
+		CF2D9101E787AF9353D48F36 /* SprintWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintWidgetViews.swift; sourceTree = "<group>"; };
 		F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SprintWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				89BCEE87A3A12E3C173E26AB /* SprintTheme.swift */,
 				36CD007EB63E25A9DBFE1BE8 /* SprintWidget.entitlements */,
 				4D4693D38168FEA839985A3A /* SprintWidget.swift */,
+				CF2D9101E787AF9353D48F36 /* SprintWidgetViews.swift */,
 			);
 			path = SprintWidget;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				DE59D1F4F984937768FDB873 /* SprintTheme.swift in Sources */,
 				6DC8B71CAE886E94E9BA3241 /* SprintWidget.swift in Sources */,
+				6A79F01FDBC86B589389BB43 /* SprintWidgetViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +241,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -253,7 +257,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -388,7 +392,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.widget;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -404,7 +408,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.SprintWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.widget;
 				SDKROOT = macosx;
 			};
 			name = Debug;
