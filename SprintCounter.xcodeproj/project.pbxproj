@@ -50,7 +50,7 @@
 		7D0E96E24100970724C6C4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89BCEE87A3A12E3C173E26AB /* SprintTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintTheme.swift; sourceTree = "<group>"; };
 		8F8DB95E35B162D01041F4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		908E0A67F89C184E27C67B96 /* SprintEngineCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SprintEngineCore; path = SprintEngineCore; sourceTree = SOURCE_ROOT; };
+		908E0A67F89C184E27C67B96 /* SprintEngineCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SprintEngineCore; sourceTree = SOURCE_ROOT; };
 		B3FC6EE4A6D2D574D76A9A07 /* SprintCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SprintCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC01A63A76FABB5E97C0F6E /* SprintCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SprintCounter.entitlements; sourceTree = "<group>"; };
 		CF2D9101E787AF9353D48F36 /* SprintWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintWidgetViews.swift; sourceTree = "<group>"; };
@@ -180,8 +180,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = A7727FFF7F4AE8D198F5661A /* Build configuration list for PBXProject "SprintCounter" */;
 			developmentRegion = en;
@@ -243,13 +241,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SprintCounterApp/SprintCounter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W44W85J8XC;
 				INFOPLIST_FILE = SprintCounterApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -259,13 +262,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SprintCounterApp/SprintCounter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W44W85J8XC;
 				INFOPLIST_FILE = SprintCounterApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -393,7 +401,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SprintWidget/SprintWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W44W85J8XC;
 				INFOPLIST_FILE = SprintWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,6 +412,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.widget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -409,7 +421,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SprintWidget/SprintWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W44W85J8XC;
 				INFOPLIST_FILE = SprintWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,6 +432,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aliabdolahi.sprintcounter.widget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;

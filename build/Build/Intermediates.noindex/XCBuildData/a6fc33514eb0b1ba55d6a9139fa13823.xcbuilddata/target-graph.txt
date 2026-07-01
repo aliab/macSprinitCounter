@@ -1,0 +1,9 @@
+Target dependency graph (4 targets)
+Target 'SprintCounter' in project 'SprintCounter'
+➜ Explicit dependency on target 'SprintWidget' in project 'SprintCounter'
+➜ Explicit dependency on target 'SprintEngineCore' in project 'SprintEngineCore'
+Target 'SprintWidget' in project 'SprintCounter'
+➜ Explicit dependency on target 'SprintEngineCore' in project 'SprintEngineCore'
+Target 'SprintEngineCore' in project 'SprintEngineCore'
+➜ Explicit dependency on target 'SprintEngineCore' in project 'SprintEngineCore'
+Target 'SprintEngineCore' in project 'SprintEngineCore' (no dependencies)

@@ -1,0 +1,59 @@
+{
+  "" : {
+    "diagnostics" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngineCore-primary.dia",
+    "emit-module-dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngineCore-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngineCore-primary-emit-module.dia",
+    "pch" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngineCore-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngineCore-primary.swiftdeps"
+  },
+  "/Users/aliabdolahi/workspace/macos/sprinitCounter/SprintEngineCore/Sources/SprintEngineCore/ConfigStore.swift" : {
+    "const-values" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore.swiftconstvalues",
+    "dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore.d",
+    "diagnostics" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore.dia",
+    "index-unit-output-path" : "/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore.o",
+    "llvm-bc" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore.bc",
+    "object" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore.o",
+    "swift-dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore.swiftdeps",
+    "swiftmodule" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/ConfigStore~partial.swiftmodule"
+  },
+  "/Users/aliabdolahi/workspace/macos/sprinitCounter/SprintEngineCore/Sources/SprintEngineCore/SprintConfig.swift" : {
+    "const-values" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig.swiftconstvalues",
+    "dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig.d",
+    "diagnostics" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig.dia",
+    "index-unit-output-path" : "/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig.o",
+    "llvm-bc" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig.bc",
+    "object" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig.o",
+    "swift-dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig.swiftdeps",
+    "swiftmodule" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintConfig~partial.swiftmodule"
+  },
+  "/Users/aliabdolahi/workspace/macos/sprinitCounter/SprintEngineCore/Sources/SprintEngineCore/SprintEngine.swift" : {
+    "const-values" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine.swiftconstvalues",
+    "dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine.d",
+    "diagnostics" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine.dia",
+    "index-unit-output-path" : "/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine.o",
+    "llvm-bc" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine.bc",
+    "object" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine.o",
+    "swift-dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine.swiftdeps",
+    "swiftmodule" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintEngine~partial.swiftmodule"
+  },
+  "/Users/aliabdolahi/workspace/macos/sprinitCounter/SprintEngineCore/Sources/SprintEngineCore/SprintState.swift" : {
+    "const-values" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState.swiftconstvalues",
+    "dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState.d",
+    "diagnostics" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState.dia",
+    "index-unit-output-path" : "/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState.o",
+    "llvm-bc" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState.bc",
+    "object" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState.o",
+    "swift-dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState.swiftdeps",
+    "swiftmodule" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/SprintState~partial.swiftmodule"
+  },
+  "/Users/aliabdolahi/workspace/macos/sprinitCounter/SprintEngineCore/Sources/SprintEngineCore/Weekday.swift" : {
+    "const-values" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday.swiftconstvalues",
+    "dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday.d",
+    "diagnostics" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday.dia",
+    "index-unit-output-path" : "/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday.o",
+    "llvm-bc" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday.bc",
+    "object" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday.o",
+    "swift-dependencies" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday.swiftdeps",
+    "swiftmodule" : "/Users/aliabdolahi/workspace/macos/sprinitCounter/build/Build/Intermediates.noindex/SprintEngineCore.build/Debug/SprintEngineCore.build/Objects-normal/arm64/Weekday~partial.swiftmodule"
+  }
+}

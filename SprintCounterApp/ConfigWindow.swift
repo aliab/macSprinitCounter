@@ -6,7 +6,9 @@ struct ConfigWindow: View {
     @State private var config: SprintConfig
 
     init() {
-        _config = State(initialValue: ConfigStore.load() ?? .default)
+        let loaded = ConfigStore.load()
+        ConfigStore.recordDebug("ConfigWindow.init ConfigStore.load => \(loaded == nil ? "nil" : "config")")
+        _config = State(initialValue: loaded ?? .default)
     }
 
     var body: some View {
@@ -56,8 +58,10 @@ struct ConfigWindow: View {
         }
         .formStyle(.grouped)
         .onChange(of: config) { _, newConfig in
+            ConfigStore.recordDebug("ConfigWindow.onChange saving \(ConfigStore.describe(newConfig))")
             ConfigStore.save(newConfig)
             WidgetCenter.shared.reloadAllTimelines()
+            ConfigStore.recordDebug("ConfigWindow.onChange requested WidgetCenter.reloadAllTimelines")
         }
     }
 

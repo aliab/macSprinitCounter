@@ -6,6 +6,17 @@
     <string>SprintCounter</string>
     <key>CFBundleIdentifier</key>
     <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.aliabdolahi.sprintcounter</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>sprintcounter</string>
+            </array>
+        </dict>
+    </array>
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>CFBundleShortVersionString</key>
