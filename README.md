@@ -7,52 +7,9 @@
 ![macOS](https://img.shields.io/badge/platform-macOS%2015%2B-000000.svg)
 ![Swift](https://img.shields.io/badge/Swift-6.0-F05138.svg)
 
+![hero image](https://raw.githubusercontent.com/aliab/macSprinitCounter/refs/heads/main/art/top_banner.png)
+
 SprintCounter is a lightweight macOS app + WidgetKit extension that shows the current sprint in a rolling quarter and how many working days you're into it. Configure your sprint start date, working days, sprint length, and sprints-per-quarter in the companion app; the widget reflects the current state on your desktop, Notification Center, or Home Screen.
-
-## Preview
-
-<!-- Real screenshots welcome — drop them in docs/screenshots/ and replace the blocks below. -->
-
-**Small**
-
-```
-┌───────────────┐
-│  SPRINT 3/6   │
-│               │
-│   Day 5       │
-│   of 8        │
-│   ▓▓▓░░░░░    │
-└───────────────┘
-```
-
-**Medium**
-
-```
-┌───────────────────────────────────┐
-│ SPRINT 3 OF 6          Q2         │
-│                                   │
-│ Day 5 / 8                         │
-│                                   │
-│ ▓▓▓░░░░░░░░░░░░░░                 │
-│ 62% · 3 working days left         │
-└───────────────────────────────────┘
-```
-
-**Large**
-
-```
-┌─────────────────────────────────────┐
-│ SPRINT 3 OF 6                Q2     │
-│                                     │
-│      Day 5                          │
-│      of 8                           │
-│                                     │
-│ ████████████░░░░░░░░░░░░░░          │
-│ 62% · 3 working days left           │
-│                                     │
-│ Next: Sprint 4 · starts Jul 13      │
-└─────────────────────────────────────┘
-```
 
 ## Features
 
