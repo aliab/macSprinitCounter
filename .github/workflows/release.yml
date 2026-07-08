@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-and-attach:
+    name: Build and attach to release
+    runs-on: macos-15
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select latest stable Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Install xcpretty
+        run: gem install xcpretty
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build app (Release, unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project SprintCounter.xcodeproj \
+            -scheme SprintCounter \
+            -configuration Release \
+            -destination "platform=macOS" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            -derivedDataPath build \
+            | xcpretty
+
+      - name: Package app bundle
+        run: |
+          cd build/Build/Products/Release
+          ditto -c -k --keepParent SprintCounter.app "SprintCounter-${{ github.event.release.tag_name }}.zip"
+
+      - name: Attach to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/Build/Products/Release/SprintCounter-${{ github.event.release.tag_name }}.zip
+          fail_on_unmatched_files: true

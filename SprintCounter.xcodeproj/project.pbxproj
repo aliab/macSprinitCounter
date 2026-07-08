@@ -12,6 +12,7 @@
 		6A79F01FDBC86B589389BB43 /* SprintWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D9101E787AF9353D48F36 /* SprintWidgetViews.swift */; };
 		6DC8B71CAE886E94E9BA3241 /* SprintWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4693D38168FEA839985A3A /* SprintWidget.swift */; };
 		88CB549541BE0EB6D816029A /* SprintCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270EB647364C416E50F59C12 /* SprintCounterApp.swift */; };
+		9B12DFC3D7CBFFD98267A4DF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F306DC5FD6D3845B5CE4E6 /* Media.xcassets */; };
 		BFF3CB341A198826E14A8C20 /* SprintWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F9A0AB8447F2845FCFBB9915 /* SprintWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C7F3F5C66B8B62A040F6412B /* ConfigWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A602015923E03A9D5FED75 /* ConfigWindow.swift */; };
 		DE59D1F4F984937768FDB873 /* SprintTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BCEE87A3A12E3C173E26AB /* SprintTheme.swift */; };
@@ -48,6 +49,7 @@
 		36CD007EB63E25A9DBFE1BE8 /* SprintWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SprintWidget.entitlements; sourceTree = "<group>"; };
 		4D4693D38168FEA839985A3A /* SprintWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintWidget.swift; sourceTree = "<group>"; };
 		7D0E96E24100970724C6C4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		87F306DC5FD6D3845B5CE4E6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		89BCEE87A3A12E3C173E26AB /* SprintTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintTheme.swift; sourceTree = "<group>"; };
 		8F8DB95E35B162D01041F4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		908E0A67F89C184E27C67B96 /* SprintEngineCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SprintEngineCore; sourceTree = SOURCE_ROOT; };
@@ -122,6 +124,7 @@
 			children = (
 				D4A602015923E03A9D5FED75 /* ConfigWindow.swift */,
 				7D0E96E24100970724C6C4C7 /* Info.plist */,
+				87F306DC5FD6D3845B5CE4E6 /* Media.xcassets */,
 				CEC01A63A76FABB5E97C0F6E /* SprintCounter.entitlements */,
 				270EB647364C416E50F59C12 /* SprintCounterApp.swift */,
 				26F1B9F416C40A1CD9C0129B /* SprintPreviewCard.swift */,
@@ -137,6 +140,7 @@
 			buildConfigurationList = 4DA55A05FBF3C51431B4336E /* Build configuration list for PBXNativeTarget "SprintCounter" */;
 			buildPhases = (
 				1086C91CE22B374B34F17E0B /* Sources */,
+				420BA086578D2035884CFAF3 /* Resources */,
 				8104F9920D322C5AFCF5397A /* Frameworks */,
 				74E3851B4351F91456D3E9B2 /* Embed Foundation Extensions */,
 			);
@@ -204,6 +208,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		420BA086578D2035884CFAF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B12DFC3D7CBFFD98267A4DF /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1086C91CE22B374B34F17E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -246,7 +261,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = W44W85J8XC;
 				INFOPLIST_FILE = SprintCounterApp/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -267,7 +281,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = W44W85J8XC;
 				INFOPLIST_FILE = SprintCounterApp/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
