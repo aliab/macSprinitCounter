@@ -11,32 +11,17 @@ public enum ConfigStore {
     public static let key = "sprintConfig"
     public static let fileName = "sprintConfig.json"
     public static let debugLogFileName = "sprintConfig-debug.log"
-    public static let homeConfigDirectoryName = "spirintCounter"
 
     public static var sharedContainerURL: URL? {
         FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroupID)
     }
 
-    public static var homeConfigDirectoryURL: URL {
-        configDirectoryURL(homeDirectory: userAccountHomeDirectoryURL())
-    }
-
-    public static var homeConfigURL: URL {
-        homeConfigDirectoryURL.appendingPathComponent(fileName)
-    }
-
-    public static func configDirectoryURL(homeDirectory: URL) -> URL {
-        homeDirectory
-            .appendingPathComponent(".config", isDirectory: true)
-            .appendingPathComponent(homeConfigDirectoryName, isDirectory: true)
+    public static var configFileURL: URL? {
+        sharedContainerURL?.appendingPathComponent(fileName)
     }
 
     public static var debugLogURL: URL? {
-        homeConfigDirectoryURL.appendingPathComponent(debugLogFileName)
-    }
-
-    private static var legacyAppGroupURL: URL? {
-        sharedContainerURL?.appendingPathComponent(fileName)
+        sharedContainerURL?.appendingPathComponent(debugLogFileName)
     }
 
     private static var sharedDefaults: UserDefaults? {
@@ -45,32 +30,27 @@ public enum ConfigStore {
 
     public static func load() -> SprintConfig? {
         recordDebug("load() requested")
-        return load(
-            primaryFileURL: homeConfigURL,
-            fallbackFileURL: legacyAppGroupURL,
-            defaults: sharedDefaults
-        )
+        // UserDefaults is always kept in sync by save(), so prefer it as the source of truth.
+        // The file is a cache that might be stale after migration, so check defaults first.
+        if let config = load(from: sharedDefaults) {
+            if let configFileURL {
+                save(config, to: configFileURL)
+            }
+            recordDebug("load() success source=defaults \(describe(config))")
+            return config
+        }
+        if let configFileURL, let config = load(from: configFileURL) {
+            save(config, to: sharedDefaults)
+            recordDebug("load() success source=file \(describe(config))")
+            return config
+        }
+        recordDebug("load() failed: no config found")
+        return nil
     }
 
     public static func save(_ config: SprintConfig) {
         recordDebug("save() requested \(describe(config))")
-        save(config, fileURL: homeConfigURL, defaults: sharedDefaults)
-    }
-
-    /// One-time migration from older stores to the home config file. Safe to call on every launch.
-    public static func migrateFromUserDefaultsIfNeeded() {
-        guard FileManager.default.fileExists(atPath: homeConfigURL.path) == false else {
-            return
-        }
-        if let legacyAppGroupURL, let config = load(from: legacyAppGroupURL) {
-            save(config, to: homeConfigURL)
-            log.info("[ConfigStore] migrated config from app group file to home config file")
-            return
-        }
-        if let config = load(from: sharedDefaults) {
-            save(config, to: homeConfigURL)
-            log.info("[ConfigStore] migrated config from UserDefaults to home config file")
-        }
+        save(config, fileURL: configFileURL, defaults: sharedDefaults)
     }
 
     public static func load(fileURL: URL?, defaults: UserDefaults?) -> SprintConfig? {
@@ -242,15 +222,6 @@ public enum ConfigStore {
         let bundleID = Bundle.main.bundleIdentifier ?? "unknown-bundle"
         let process = ProcessInfo.processInfo.processName
         return "\(process) \(bundleID) pid=\(ProcessInfo.processInfo.processIdentifier)"
-    }
-
-    private static func userAccountHomeDirectoryURL() -> URL {
-        #if os(macOS)
-        if let passwd = getpwuid(getuid()), let directory = passwd.pointee.pw_dir {
-            return URL(fileURLWithPath: String(cString: directory), isDirectory: true)
-        }
-        #endif
-        return FileManager.default.homeDirectoryForCurrentUser
     }
 
     private static var isWidgetProcess: Bool {

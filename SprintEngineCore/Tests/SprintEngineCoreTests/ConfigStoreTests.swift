@@ -22,14 +22,6 @@ final class ConfigStoreTests: XCTestCase {
         )
     }
 
-    func testConfigDirectoryUsesProvidedHomeDirectory() {
-        let home = URL(fileURLWithPath: "/tmp/example-home", isDirectory: true)
-
-        let directory = ConfigStore.configDirectoryURL(homeDirectory: home)
-
-        XCTAssertEqual(directory.path, "/tmp/example-home/.config/spirintCounter")
-    }
-
     func testLoadReturnsNilWhenFileMissing() {
         let url = tempURL()
         XCTAssertNil(ConfigStore.load(from: url))

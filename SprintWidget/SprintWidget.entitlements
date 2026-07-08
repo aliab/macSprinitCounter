@@ -8,11 +8,5 @@
 	<array>
 		<string>group.com.aliabdolahi.sprintcounter</string>
 	</array>
-	<key>com.apple.security.temporary-exception.files.home-relative-path.read-write</key>
-	<array>
-		<string>/.config/spirintCounter</string>
-		<string>/.config/spirintCounter/</string>
-		<string>/.config/spirintCounter/sprintConfig.json</string>
-	</array>
 </dict>
 </plist>

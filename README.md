@@ -86,7 +86,7 @@ SprintCounter.xcodeproj
         ├── SprintEngine.swift       currentSprint(today:config:) → SprintState
         ├── SprintConfig.swift       stored config (Codable, Sendable)
         ├── SprintState.swift        computed sprint state
-        ├── ConfigStore.swift        ~/.config persistence + App Group fallback
+        ├── ConfigStore.swift        App Group container persistence + UserDefaults fallback
         └── Weekday.swift
 ```
 
@@ -98,7 +98,7 @@ SprintCounter.xcodeproj
 ConfigWindow (form)
       │  writes SprintConfig as JSON
       ▼
-~/.config/spirintCounter/sprintConfig.json
+App Group container / sprintConfig.json
       │
       ├── read by ──> SprintWidget TimelineProvider
       │                      │
@@ -115,11 +115,9 @@ On any config change, the app calls `WidgetCenter.shared.reloadAllTimelines()` f
 
 ## Configuration
 
-Config is stored as JSON at `~/.config/spirintCounter/sprintConfig.json`. On first launch, default config (Mon–Fri, 2-week sprints, 6 sprints/quarter, start = today) is written automatically so the widget never shows a placeholder on fresh install.
+Config is stored as JSON in the App Group container (`~/Library/Group Containers/group.com.aliabdolahi.sprintcounter/sprintConfig.json`), shared between the app and widget. An App Group `UserDefaults` store (`group.com.aliabdolahi.sprintcounter`, key `sprintConfig`) is kept in sync as a fallback. On first launch, default config (Mon–Fri, 2-week sprints, 6 sprints/quarter, start = today) is written automatically so the widget never shows a placeholder on fresh install.
 
-A legacy App Group `UserDefaults` store (`group.com.aliabdolahi.sprintcounter`, key `sprintConfig`) is kept in sync as a fallback and migrated to the home config file on first launch if present.
-
-A debug log is written to `~/.config/spirintCounter/sprintConfig-debug.log` from the app process (not the widget) to help diagnose config issues.
+A debug log is written to `sprintConfig-debug.log` in the same App Group container from the app process (not the widget) to help diagnose config issues.
 
 ## Testing
 

@@ -6,7 +6,6 @@ import WidgetKit
 struct SprintCounterApp: App {
     init() {
         ConfigStore.recordDebug("SprintCounterApp.init start")
-        ConfigStore.migrateFromUserDefaultsIfNeeded()
         if ConfigStore.load() == nil {
             ConfigStore.recordDebug("SprintCounterApp.init no config found; saving default")
             ConfigStore.save(.default)
