@@ -1,4 +1,0 @@
-module SprintEngineCore {
-header "SprintEngineCore-Swift.h"
-export *
-}
