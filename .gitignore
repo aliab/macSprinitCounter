@@ -1,11 +1,36 @@
-# Swift Package Manager build artifacts
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+xcuserdata/
+*.moved-aside
+
+# Swift Package Manager
 .build/
 .swiftpm/
 
-# Xcode
-xcuserdata/
-DerivedData/
-*.xcuserstate
+# CocoaPods
+Pods/
 
-# macOS
-.DS_Store
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Misc
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
